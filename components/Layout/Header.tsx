@@ -61,7 +61,12 @@ export default function Header() {
                 <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
                   <FaPhone className="w-4 h-4 text-white" />
                 </div>
-                <span className="font-medium">0785.689.211</span>
+                <a
+                  href="tel:0785689211"
+                  className="font-medium hover:text-red-300"
+                >
+                  0785.689.211
+                </a>
               </div>
             </div>
 
@@ -69,7 +74,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <span className="text-xs text-gray-300">Theo dõi chúng tôi:</span>
               <div className="flex gap-2">
-                {/* Facebook */}
+                {/* Social links */}
                 <div className="flex gap-2">
                   {/* Facebook */}
                   <a
@@ -96,29 +101,26 @@ export default function Header() {
                     </svg>
                   </a>
 
-                  {/* Zalo */}
+                  {/* YouTube */}
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@thodienhanam"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-500 transition-all duration-300 transform hover:scale-110"
-                    aria-label="Zalo"
+                    aria-label="YouTube"
                   >
                     <svg
                       className="w-4 h-4 text-white"
-                      fill="currentColor"
                       viewBox="0 0 24 24"
+                      fill="currentColor"
                     >
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 
-      10 10 10 10-4.48 10-10S17.52 2 
-      12 2zm-2 15l-5-5 1.41-1.41L10 
-      14.17l7.59-7.59L19 8l-9 9z"
-                      />
+                      <path d="M23.498 6.186a3.005 3.005 0 00-2.116-2.127C19.61 3.5 12 3.5 12 3.5s-7.61 0-9.382.559A3.005 3.005 0 00.502 6.186C0 7.965 0 12 0 12s0 4.035.502 5.814a3.005 3.005 0 002.116 2.127C4.39 20.5 12 20.5 12 20.5s7.61 0 9.382-.559a3.005 3.005 0 002.116-2.127C24 16.035 24 12 24 12s0-4.035-.502-5.814zM9.75 15.5v-7l6 3.5-6 3.5z" />
                     </svg>
                   </a>
 
                   {/* TikTok */}
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@thodienhanam"
                     className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-500 transition-all duration-300 transform hover:scale-110"
                     aria-label="TikTok"
                   >
@@ -127,16 +129,7 @@ export default function Header() {
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path
-                        d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 
-      2.89 0 01-5.2 1.74 2.89 2.89 0 
-      012.31-4.64 2.93 2.93 0 
-      01.88.13V9.4a6.84 6.84 0 
-      00-.88-.05A6.33 6.33 0 005 
-      20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 
-      8.16 0 004.77 1.52v-3.4a4.85 4.85 
-      0 01-1-.1z"
-                      />
+                      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 011.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z" />
                     </svg>
                   </a>
                 </div>
@@ -252,7 +245,12 @@ export default function Header() {
                 </div>
                 <div>
                   <p className="text-xs font-medium opacity-90">Hotline 24/7</p>
-                  <p className="text-sm font-bold">0785.689.211</p>
+                  <a
+                    href="tel:0785689211"
+                    className="text-sm font-bold hover:text-red-200"
+                  >
+                    0785.689.211
+                  </a>
                 </div>
               </div>
             </div>
@@ -354,7 +352,12 @@ export default function Header() {
                     <p className="text-xs font-medium opacity-90">
                       Hotline 24/7
                     </p>
-                    <p className="text-sm font-bold">0785.689.211</p>
+                    <a
+                      href="tel:0785689211"
+                      className="text-sm font-bold hover:text-red-200"
+                    >
+                      0785.689.211
+                    </a>
                   </div>
                 </div>
               </div>

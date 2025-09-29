@@ -107,7 +107,7 @@ export const slugify = (text: string): string => {
 
 export const generateCanonicalUrl = (
   path: string,
-  baseUrl: string = "https://your-domain.com"
+  baseUrl: string = "https://your-actual-domain.com"
 ): string => {
   return `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
 };

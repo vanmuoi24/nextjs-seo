@@ -54,7 +54,7 @@ const DienCongNghiepPage = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg"
+              className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg"
             >
               DỊCH VỤ SỬA ĐIỆN CÔNG NGHIỆP
             </motion.h1>
@@ -117,7 +117,7 @@ const DienCongNghiepPage = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:0979821293"
+                href="#"
                 className="flex items-center gap-3 bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-xl hover:bg-blue-50 transition-all shadow-xl"
               >
                 <Phone className="w-6 h-6" />
@@ -126,7 +126,7 @@ const DienCongNghiepPage = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:0988392334"
+                href="#"
                 className="flex items-center gap-3 bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-xl hover:bg-blue-50 transition-all shadow-xl"
               >
                 <Phone className="w-6 h-6" />
@@ -642,7 +642,7 @@ const DienCongNghiepPage = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:0979821293"
+              href="#"
               className="flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-xl hover:bg-blue-50 transition-all shadow-xl"
             >
               <Phone className="w-6 h-6" />
@@ -651,7 +651,7 @@ const DienCongNghiepPage = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:0988392334"
+              href="#"
               className="flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-xl hover:bg-blue-50 transition-all shadow-xl"
             >
               <Phone className="w-6 h-6" />

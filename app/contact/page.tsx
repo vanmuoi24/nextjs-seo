@@ -24,13 +24,13 @@ const ContactPage = () => {
             {/* Hotlines */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
               <a
-                href="#"
+                href="tel:0979821293"
                 className="flex items-center gap-3 bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-xl hover:bg-yellow-50 hover:scale-105 transition-all shadow-xl hover:shadow-2xl"
               >
                 <Phone className="w-6 h-6" /> 0979 821 293
               </a>
               <a
-                href="#"
+                href="tel:0988 392 334"
                 className="flex items-center gap-3 bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-xl hover:bg-yellow-50 hover:scale-105 transition-all shadow-xl hover:shadow-2xl"
               >
                 <Phone className="w-6 h-6" /> 0988 392 334
@@ -47,7 +47,7 @@ const ContactPage = () => {
                 <div className="w-5 h-5 bg-green-300 rounded-full flex items-center justify-center">
                   <div className="w-2 h-2 bg-white rounded-full"></div>
                 </div>
-                <span className="font-semibold">Bảo hành chính hãng</span>
+                <span className="font-semibold">Bảo hành 3–6 tháng</span>
               </div>
               <div className="flex items-center gap-2">
                 <Building2 className="w-5 h-5 text-blue-300" />
@@ -86,13 +86,13 @@ const ContactPage = () => {
                     </h3>
                     <div className="space-y-1">
                       <a
-                        href="#"
+                        href="tel:0979821293"
                         className="block text-red-600 hover:text-red-700 font-semibold"
                       >
                         0979 821 293
                       </a>
                       <a
-                        href="#"
+                        href="tel:0988392334"
                         className="block text-red-600 hover:text-red-700 font-semibold"
                       >
                         0988 392 334
@@ -308,9 +308,7 @@ const ContactPage = () => {
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <h3 className="font-bold text-gray-900 mb-2">Phường Kim Bảng</h3>
-              <p className="text-sm text-gray-600">
-                Bảo hành chính hãng 12 tháng
-              </p>
+              <p className="text-sm text-gray-600">Bảo hành 3–6 tháng</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <h3 className="font-bold text-gray-900 mb-2">Phường Hà Nam</h3>
@@ -407,7 +405,7 @@ const ContactPage = () => {
                 Ưu điểm dịch vụ di động
               </h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• Bảo hành chính hãng 12 tháng</li>
+                <li>• Bảo hành 3–6 tháng</li>
                 <li>• Phụ kiện chính hãng 100%</li>
                 <li>• Giá cả cạnh tranh nhất khu vực</li>
                 <li>• Hỗ trợ 24/7 mọi nơi</li>

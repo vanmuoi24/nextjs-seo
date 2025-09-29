@@ -37,8 +37,18 @@ export default function Footer() {
                   thodienhanam.store
                 </Link>
               </li>
-              <li>📞 0979 821 293</li>
-              <li>📞 0988 392 334</li>
+              <li>
+                📞{" "}
+                <a href="#" className="hover:text-white">
+                  0979 821 293
+                </a>
+              </li>
+              <li>
+                📞{" "}
+                <a href="#" className="hover:text-white">
+                  0988 392 334
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -56,16 +66,22 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Kết nối</h3>
             <div className="flex space-x-4">
               <Link
-                href="https://www.facebook.com/tho.dien.nuoc.hanam.ninhbinh/?_rdc=1&_rdr#"
+                href="https://www.facebook.com/tho.dien.nuoc.hanam.ninhbinh/"
                 className="hover:text-blue-400 transition-colors"
               >
                 Facebook
               </Link>
-              <Link href="#" className="hover:text-pink-400 transition-colors">
-                Instagram
+              <Link
+                href="https://www.youtube.com/channel/UCCys4_vHVV7v47KOSC36Hxw"
+                className="hover:text-red-400 transition-colors"
+              >
+                YouTube
               </Link>
-              <Link href="#" className="hover:text-green-400 transition-colors">
-                WhatsApp
+              <Link
+                href="https://www.tiktok.com/@tho_dien_tinh_ninh_binh"
+                className="hover:text-pink-400 transition-colors"
+              >
+                TikTok
               </Link>
             </div>
           </div>

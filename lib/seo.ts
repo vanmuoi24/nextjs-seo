@@ -42,7 +42,7 @@ export const structuredData = {
     "@type": "WebSite",
     name: "SEO App",
     description: "Công cụ SEO chuyên nghiệp",
-    url: "https://your-domain.com",
+    url: "https://your-actual-domain.com",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://your-domain.com/search?q={search_term_string}",
@@ -53,7 +53,7 @@ export const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "SEO App",
-    url: "https://your-domain.com",
+    url: "https://your-actual-domain.com",
     logo: "https://your-domain.com/logo.png",
     description: "Công cụ SEO chuyên nghiệp",
     contactPoint: {

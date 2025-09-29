@@ -5,11 +5,15 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap", // Tối ưu font loading
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap", // Tối ưu font loading
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -39,7 +43,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://your-actual-domain.com"), // ⚠️ Thay đổi domain thực
   alternates: {
     canonical: "/",
     languages: {
@@ -50,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "vi_VN",
-    url: "https://your-domain.com",
+    url: "https://your-actual-domain.com", // ⚠️ Thay đổi domain thực
     title: "SEO App - Công cụ SEO chuyên nghiệp",
     description:
       "Công cụ SEO toàn diện giúp tối ưu hóa website, nghiên cứu từ khóa, phân tích đối thủ và theo dõi thứ hạng trên Google.",
@@ -84,7 +88,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "your-actual-google-verification-code", // ⚠️ Thay đổi verification code thực
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
@@ -100,6 +104,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
+      <head>
+        {/* Preload critical resources */}
+        <link rel="preload" href="/banner.png" as="image" />
+        <link rel="preload" href="/logo.jpeg" as="image" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

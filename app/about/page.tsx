@@ -3,6 +3,7 @@ import Image from "next/image";
 import worker from "../../public/wỏk.jpg";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },
@@ -44,9 +45,9 @@ export default function AboutSection() {
         >
           <motion.h2
             variants={fadeInLeft}
-            className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-900"
+            className="text-3xl md:text-4xl font-bold mb-6 text-gray-900"
           >
-            Giới thiệu về trung tâm
+            GIỚI THIỆU VỀ TRUNG TÂM
           </motion.h2>
           <motion.p
             variants={fadeInLeft}
@@ -77,15 +78,37 @@ export default function AboutSection() {
           </motion.p>
 
           <motion.ul variants={fadeInLeft} className="space-y-3 text-gray-700">
-            <li>⭐ “Thợ điện ở gần tôi”</li>
-            <a href="/" className="underline hover:text-red-500 transition">
-              ⭐ Bạn cần sửa điện nước tại Ninh Bình, Hà Nam? Có mặt trong 30
-              phút, hỗ trợ nhanh, uy tín.
-            </a>
-            <a href="/" className="underline hover:text-red-500 transition">
-              ⭐ Làm việc theo bảng giá rõ ràng, nhiều chính sách ưu đãi giúp
-              khách hàng tiết kiệm chi phí.
-            </a>
+            <ul className="space-y-2">
+              <li>
+                ⭐{" "}
+                <Link
+                  href="/"
+                  className="underline text-black-600 hover:text-blue-800"
+                >
+                  “Thợ điện ở gần tôi”
+                </Link>
+              </li>
+              <li>
+                ⭐{" "}
+                <Link
+                  href="/"
+                  className="underline text-black-600 hover:text-blue-800"
+                >
+                  Bạn cần sửa điện nước tại Ninh Bình, Hà Nam? Có mặt trong 30
+                  phút, hỗ trợ nhanh, uy tín.
+                </Link>
+              </li>
+              <li>
+                ⭐{" "}
+                <Link
+                  href="/"
+                  className="underline text-black-600 hover:text-blue-800"
+                >
+                  Làm việc theo bảng giá rõ ràng, nhiều chính sách ưu đãi giúp
+                  khách hàng tiết kiệm chi phí.
+                </Link>
+              </li>
+            </ul>
           </motion.ul>
         </motion.div>
 

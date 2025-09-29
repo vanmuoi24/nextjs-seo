@@ -84,6 +84,7 @@ export default function ServiceSection() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 shadow"
+              aria-label="Xem dịch vụ trước"
             >
               <ArrowLeft className="w-6 h-6 text-gray-600" />
             </motion.button>
@@ -91,6 +92,7 @@ export default function ServiceSection() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 shadow"
+              aria-label="Xem dịch vụ tiếp theo"
             >
               <ArrowRight className="w-6 h-6 text-gray-600 " />
             </motion.button>
@@ -191,60 +193,6 @@ export default function ServiceSection() {
         </div>
 
         {/* Bottom CTA */}
-        <section className="text-center mt-16">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="relative bg-white rounded-2xl p-10 text-gray-800 shadow-2xl overflow-hidden"
-          >
-            {/* Nội dung */}
-            <div className="relative z-10 flex flex-col items-center">
-              {/* Icon SOS */}
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4 shadow-md">
-                <AlertTriangle className="w-8 h-8 text-red-600" />
-              </div>
-
-              <h3 className="text-3xl font-extrabold mb-4 drop-shadow-sm text-red-600">
-                Bạn đang cần thợ điện nước uy tín tại Tỉnh Ninh Bình – Hà Nam?
-              </h3>
-
-              <p className="text-gray-600 mb-4 text-lg leading-relaxed">
-                Chúng tôi cung cấp dịch vụ sửa chữa điện nước{" "}
-                <span className="font-semibold text-red-600">
-                  nhanh chóng – chuyên nghiệp – giá hợp lý
-                </span>
-                .
-              </p>
-
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Đội ngũ kỹ thuật có mặt tận nơi, xử lý điện dân dụng, điện lạnh,
-                điện công nghiệp chỉ trong 30 phút. Gọi thợ ngay khu vực{" "}
-                <span className="font-semibold text-red-600">
-                  Duy Tiên – Hà Nam cũ
-                </span>
-                .
-              </p>
-
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a
-                  href="tel:0966814094"
-                  className="flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors shadow-lg"
-                >
-                  <PhoneCall className="w-6 h-6" /> 0966.814.094
-                </a>
-                <Link
-                  href="/contact"
-                  className="border-2 border-red-600 text-red-600 px-8 py-3 rounded-lg font-bold text-lg hover:bg-red-600 hover:text-white transition-colors shadow-md"
-                >
-                  Đặt lịch hẹn
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        </section>
       </div>
     </section>
   );
