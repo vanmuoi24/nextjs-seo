@@ -53,7 +53,8 @@ export default function Home() {
           priority
           className="object-cover"
           sizes="100vw"
-          quality={85}
+          quality={75}
+          placeholder="blur"
         />
 
         {/* Overlay mờ */}
@@ -127,6 +128,9 @@ export default function Home() {
                     alt={post.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={75}
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">

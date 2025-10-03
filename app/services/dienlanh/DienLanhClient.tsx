@@ -8,14 +8,14 @@ import { FaPhone } from "react-icons/fa";
 
 // ...existing code...
 const services = [
-  "Sửa điều hòa treo tường, điều hòa âm trần, điều hòa công nghiệp",
-  "Vệ sinh, bơm ga, thay block, xử lý xì giàn nóng – lạnh",
+  "Sửa điều hòa treo tường, điều hòa âm trần, điều hòa công nghiệp tại Ninh Bình & Hà Nam",
+  "Vệ sinh, bơm ga, thay block, xử lý xì giàn nóng – lạnh chuyên nghiệp",
   "Sửa tủ lạnh, tủ đông, tủ mát: không lạnh, chảy nước, không đóng tuyết",
-  "Sửa máy giặt, máy sấy: không vắt, không xả nước, báo lỗi",
+  "Sửa máy giặt, máy sấy: không vắt, không xả nước, báo lỗi tại Ninh Bình & Hà Nam",
   "Sửa máy nước nóng năng lượng mặt trời và máy nước nóng lạnh trực tiếp",
-  "Sửa kho lạnh bảo quản thực phẩm, dược phẩm",
+  "Sửa kho lạnh bảo quản thực phẩm, dược phẩm chuyên nghiệp",
   "Bảo trì thiết bị điện lạnh định kỳ cho nhà ở, cửa hàng, công ty, nhà máy",
-  "Thi công, lắp đặt mới hệ thống lạnh theo yêu cầu",
+  "Thi công, lắp đặt mới hệ thống lạnh theo yêu cầu tại Ninh Bình & Hà Nam",
 ];
 
 const benefits = [
@@ -106,26 +106,33 @@ export default function DichVuDienLanh() {
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-bold text-blue-700 uppercase leading-tight">
-              Dịch Vụ Sửa Điện Lạnh Tại Tỉnh Ninh Bình & Hà Nam
+              Sửa Điện Lạnh Chuyên Nghiệp Tại Ninh Bình & Hà Nam
             </h1>
             <p className="mt-3 text-gray-700 text-lg">
-              Nhanh chóng, chuyên nghiệp, giá hợp lý. Có mặt sau 30 phút — hỗ
+              <strong>
+                Dịch vụ sửa điện lạnh uy tín hàng đầu tại Ninh Bình & Hà Nam
+              </strong>
+              . Nhanh chóng, chuyên nghiệp, giá hợp lý. Có mặt sau 30 phút — hỗ
               trợ nội & ngoại thành — nhận làm ngoài giờ. Tư vấn kỹ thuật miễn
               phí, báo giá rõ ràng trước khi làm.
             </p>
 
             <p className="mt-4 text-gray-600">
-              Chuyên sửa: điều hòa, tủ lạnh, máy giặt, kho lạnh, máy nước nóng
-              lạnh… Đội thợ lành nghề và tận tâm.
+              Chuyên sửa:{" "}
+              <strong>
+                điều hòa, tủ lạnh, máy giặt, kho lạnh, máy nước nóng lạnh
+              </strong>{" "}
+              tại Ninh Bình & Hà Nam. Đội thợ lành nghề và tận tâm với hơn 10
+              năm kinh nghiệm.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:space-x-4 gap-3 justify-center md:justify-start">
               <a
                 href="/contact"
                 className="inline-flex items-center gap-3 bg-red-600 text-white px-6 py-3 rounded-xl text-lg font-semibold shadow hover:bg-red-700 transition"
-                aria-label="Gọi ngay 0987 654 321"
+                aria-label="Gọi ngay 0979.821.293"
               >
-                <FaPhone /> Gọi Ngay: 0987 654 321
+                <FaPhone /> Gọi Ngay: 0979.821.293
               </a>
               <a
                 href="#services"
@@ -151,12 +158,15 @@ export default function DichVuDienLanh() {
       <section id="services" className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-2xl font-bold text-blue-600 mb-4">
-            Các dịch vụ sửa điện lạnh chúng tôi cung cấp
+            Dịch Vụ Sửa Điện Lạnh Chuyên Nghiệp Tại Ninh Bình & Hà Nam
           </h2>
 
           <p className="text-gray-700 mb-6">
-            Bạn đang cần sửa điện lạnh tại Tỉnh Ninh Bình, Hà Nam? Chúng tôi xử
-            lý nhanh mọi sự cố, từ thiết bị gia dụng đến hệ thống công nghiệp.
+            Bạn đang cần <strong>sửa điện lạnh tại Ninh Bình, Hà Nam</strong>?
+            Chúng tôi xử lý nhanh mọi sự cố, từ thiết bị gia dụng đến hệ thống
+            công nghiệp.
+            <strong>Đội ngũ kỹ thuật viên điện lạnh chuyên nghiệp</strong> với
+            hơn 10 năm kinh nghiệm.
           </p>
 
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -172,6 +182,41 @@ export default function DichVuDienLanh() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Local SEO Section */}
+      <section className="py-12 bg-blue-50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-2xl font-bold text-blue-600 mb-6 text-center">
+            Tại Sao Chọn Dịch Vụ Sửa Điện Lạnh Của Chúng Tôi Tại Ninh Bình & Hà
+            Nam?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="text-center bg-white p-6 rounded-xl shadow-sm">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">10+</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Năm Kinh Nghiệm</h3>
+              <p className="text-gray-600">
+                Sửa điện lạnh tại Ninh Bình & Hà Nam
+              </p>
+            </div>
+            <div className="text-center bg-white p-6 rounded-xl shadow-sm">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">1000+</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Khách Hàng Hài Lòng</h3>
+              <p className="text-gray-600">Tại Ninh Bình & Hà Nam</p>
+            </div>
+            <div className="text-center bg-white p-6 rounded-xl shadow-sm">
+              <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">24/7</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Hỗ Trợ Khẩn Cấp</h3>
+              <p className="text-gray-600">Có mặt sau 30 phút</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -313,7 +358,7 @@ export default function DichVuDienLanh() {
 
             <div className="mt-3 text-right">
               <a
-                href="tel:0987654321"
+                href="tel:0979.821.293"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-lg shadow"
               >
                 <FaPhone /> Gọi đặt lịch
@@ -328,8 +373,8 @@ export default function DichVuDienLanh() {
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <p className="text-gray-700">
             Hỗ trợ 24/7 – Có mặt sau 30 phút. Liên hệ:{" "}
-            <a href="tel:0987654321" className="font-semibold text-blue-600">
-              0987 654 321
+            <a href="tel:0979.821.293" className="font-semibold text-blue-600">
+              0785.689.211
             </a>
           </p>
         </div>
@@ -337,7 +382,7 @@ export default function DichVuDienLanh() {
 
       {/* Floating call button */}
       <a
-        href="tel:0987654321"
+        href="tel:0979.821.293"
         className="fixed right-4 bottom-4 bg-green-600 text-white px-4 py-3 rounded-full shadow-lg md:hidden flex items-center gap-2"
         aria-label="Gọi nhanh"
       >

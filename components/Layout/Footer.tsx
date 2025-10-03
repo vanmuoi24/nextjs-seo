@@ -39,13 +39,13 @@ export default function Footer() {
               </li>
               <li>
                 📞{" "}
-                <a href="#" className="hover:text-white">
+                <a href="tel:0979821293" className="hover:text-white">
                   0979 821 293
                 </a>
               </li>
               <li>
                 📞{" "}
-                <a href="#" className="hover:text-white">
+                <a href="tel:0988392334"className="hover:text-white">
                   0988 392 334
                 </a>
               </li>

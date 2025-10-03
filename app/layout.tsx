@@ -1,119 +1,71 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap", // Tối ưu font loading
-  preload: true,
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap", // Tối ưu font loading
-  preload: true,
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    default: "SEO App - Công cụ SEO chuyên nghiệp",
-    template: "%s | SEO App",
-  },
+  title:
+    "Dịch Vụ Sửa Điện Nước Chuyên Nghiệp Tại Ninh Bình & Hà Nam | Uy Tín Hàng Đầu",
   description:
-    "Công cụ SEO toàn diện giúp tối ưu hóa website, nghiên cứu từ khóa, phân tích đối thủ và theo dõi thứ hạng trên Google.",
-  keywords: [
-    "SEO",
-    "tối ưu hóa công cụ tìm kiếm",
-    "Google SEO",
-    "nghiên cứu từ khóa",
-    "backlink",
-    "phân tích đối thủ",
-    "theo dõi thứ hạng",
-    "SEO tools",
-    "công cụ SEO",
-    "marketing online",
-  ],
-  authors: [{ name: "SEO App Team" }],
-  creator: "SEO App",
-  publisher: "SEO App",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL("https://your-actual-domain.com"), // ⚠️ Thay đổi domain thực
-  alternates: {
-    canonical: "/",
-    languages: {
-      "vi-VN": "/vi",
-      "en-US": "/en",
-    },
-  },
+    "Dịch vụ sửa điện nước chuyên nghiệp tại Ninh Bình & Hà Nam. Sửa điện dân dụng, điện công nghiệp, điện lạnh. Có mặt sau 30 phút, bảo hành sau sửa chữa. Liên hệ: 0979 821 293",
+  keywords:
+    "sửa điện nước, sửa điện dân dụng, sửa điện công nghiệp, sửa điện lạnh, Ninh Bình, Hà Nam, thợ điện nước, sửa chữa điện nước",
   openGraph: {
-    type: "website",
-    locale: "vi_VN",
-    url: "https://your-actual-domain.com", // ⚠️ Thay đổi domain thực
-    title: "SEO App - Công cụ SEO chuyên nghiệp",
+    title: "Dịch Vụ Sửa Điện Nước Chuyên Nghiệp Tại Ninh Bình & Hà Nam",
     description:
-      "Công cụ SEO toàn diện giúp tối ưu hóa website, nghiên cứu từ khóa, phân tích đối thủ và theo dõi thứ hạng trên Google.",
-    siteName: "SEO App",
+      "Dịch vụ sửa điện nước chuyên nghiệp tại Ninh Bình & Hà Nam. Có mặt sau 30 phút, bảo hành sau sửa chữa.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/banner.png",
         width: 1200,
         height: 630,
-        alt: "SEO App - Công cụ SEO chuyên nghiệp",
+        alt: "Dịch vụ sửa điện nước tại Ninh Bình & Hà Nam",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO App - Công cụ SEO chuyên nghiệp",
+    title: "Dịch Vụ Sửa Điện Nước Chuyên Nghiệp Tại Ninh Bình & Hà Nam",
     description:
-      "Công cụ SEO toàn diện giúp tối ưu hóa website, nghiên cứu từ khóa, phân tích đối thủ và theo dõi thứ hạng trên Google.",
-    images: ["/og-image.jpg"],
-    creator: "@seoapp",
+      "Dịch vụ sửa điện nước chuyên nghiệp tại Ninh Bình & Hà Nam. Có mặt sau 30 phút, bảo hành sau sửa chữa.",
+    images: ["/banner.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  verification: {
-    google: "your-actual-google-verification-code", // ⚠️ Thay đổi verification code thực
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
+  alternates: {
+    canonical: "https://diencongnghiep.store/",
   },
 };
 
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="vi">
       <head>
-        {/* Preload critical resources */}
-        <link rel="preload" href="/banner.png" as="image" />
-        <link rel="preload" href="/logo.jpeg" as="image" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="preload" href="/banner.png" as="image" type="image/png" />
+        <link rel="preload" href="/logo.jpeg" as="image" type="image/jpeg" />
+        <link
+          rel="preload"
+          href="/z7057416444686_424798481365a586cb005327a0f17ea7.jpg"
+          as="image"
+          type="image/jpeg"
+        />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={inter.className}>
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

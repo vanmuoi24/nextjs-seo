@@ -15,7 +15,7 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = "SEO App - Tối ưu hóa công cụ tìm kiếm",
+  title = "Thợ Điên",
   description = "Ứng dụng SEO chuyên nghiệp giúp tối ưu hóa website cho công cụ tìm kiếm",
   keywords = "SEO, tối ưu hóa, công cụ tìm kiếm, Google, website",
   ogTitle,
